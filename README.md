@@ -72,6 +72,16 @@ Frontend
 Request: `{"player1": "...", "player2": "...", "surface": "Hard", "date": "2019-12-01", "tournament": "Australian Open"}` (`date` defaults to today, `tournament` is optional).
 Response: `player1`, `player2`, `player1_probability`, `player2_probability`, `predicted_winner`, `threshold`, `historical_test_accuracy`, `notes`, plus the 18 model inputs under `model_input`.
 Errors return `{"error": "..."}` with status 400 (bad input), 404 (unknown player), 422 (insufficient data) or 503/500. Stack traces are never sent to the browser.
+## Frontend Screenshots
+
+### 1. Homepage
+![Homepage](ScreenShots/homepage.png)
+
+### 2. Player Selection
+![Player Selection](ScreenShots/prediction_form_filled.png)
+
+### 3. Prediction Result
+![Prediction Result](ScreenShots/prediction_result.png)
 
 ## 13. Feature generation
 `build_match_features(player1, player2, surface, prediction_date, tournament=None)` in `src/prediction_features.py`:
