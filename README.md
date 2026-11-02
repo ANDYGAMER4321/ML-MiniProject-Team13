@@ -72,7 +72,7 @@ Frontend
 Request: `{"player1": "...", "player2": "...", "surface": "Hard", "date": "2019-12-01", "tournament": "Australian Open"}` (`date` defaults to today, `tournament` is optional).
 Response: `player1`, `player2`, `player1_probability`, `player2_probability`, `predicted_winner`, `threshold`, `historical_test_accuracy`, `notes`, plus the 18 model inputs under `model_input`.
 Errors return `{"error": "..."}` with status 400 (bad input), 404 (unknown player), 422 (insufficient data) or 503/500. Stack traces are never sent to the browser.
-## Frontend Screenshots
+## Interactive GUI Demonstration 
 
 ### 1. Homepage
 ![Homepage](ScreenShots/homepage.png)
