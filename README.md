@@ -119,3 +119,24 @@ Novak Djokovic 72.96% · Daniil Medvedev 27.04% · predicted winner: Novak Djoko
 
 ## 20. Future improvements
 Fix and retrain with a correct `surface_h2h`; train on 2020+ data; use weekly ranking files; add serve/return statistics and fatigue features; add WTA data; calibrate probabilities; deploy with a production WSGI server.
+
+## 21. Project Visualizations
+
+### 1. ATP Matches by Year
+
+Shows the distribution of usable ATP matches from 1997 to 2019.
+
+![ATP Matches by Year](images/matches_by_year.png)
+
+### 2. ATP Matches by Court Surface
+
+Compares the number of matches played on Hard, Clay, Grass and Carpet courts.
+
+![ATP Matches by Surface](images/matches_by_surface.png)
+
+### 3. Random Forest Feature Importance
+
+Shows the relative importance of the features used by our trained Random Forest model.
+
+![Random Forest Feature Importance](images/feature_importance.png)
+
